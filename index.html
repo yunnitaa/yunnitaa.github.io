@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Yunita</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f7fa;
+        color: #1a1a1a;
+        text-align: center;
+      }
+
+      /* Header / Navbar */
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Profil Card */
+      .profile-container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Foto Profil Lingkaran */
+      .img-wrapper {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px auto;
+        border: 4px solid #007bff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* bagian atas tetap di atas lingkaran */
+        transition: transform 0.3s ease;
+      }
+
+      .img-wrapper img {
+        width: auto;
+        height: 150%; /* setengah badan terlihat */
+        object-fit: cover;
+        object-position: 0% 0%; /* geser foto ke kiri */
+        transition: transform 0.3s ease;
+      }
+
+      .img-wrapper:hover {
+        transform: scale(1.05);
+      }
+
+      .img-wrapper:hover {
+        transform: scale(1.05);
+      }
+
+      /* Nama & Bio */
+      h2 {
+        margin-bottom: 10px;
+        font-size: 26px;
+      }
+
+      .bio {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Tombol Sosial Media */
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .social-links a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        color: #007bff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .social-links a:hover {
+        background-color: #007bff;
+        color: white;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px 0;
+        font-size: 14px;
+        color: #555;
+      }
+
+      /* Responsive */
+      @media (max-width: 500px) {
+        .img-wrapper {
+          width: 180px;
+          height: 180px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <h1>Yunita</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Tentang Saya</a>
+        <a href="#">Keahlian</a>
+        <a href="#">Proyek</a>
+        <a href="#">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- Profil Card -->
+    <div class="profile-container">
+      <div class="img-wrapper">
+        <img src="FOTO YUNITA.jpg" alt="Foto Yunita" />
+      </div>
+
+      <h2>Halo, Saya Yunita</h2>
+      <p class="bio">
+        Saya mahasiswa PGSD angkatan 2023, Fakultas Keguruan dan Ilmu Pendidikan, Universitas Jember.
+      </p>
+
+      <div class="social-links">
+        <a href="yunita.ikaputriarimbi@gmail.com">Email</a>
+        <a href="https://github.com/yunnitaa/yunnitaa.github.io.git" target="_blank">GitHub</a>
+        <a href="https://drive.google.com/drive/folders/1xLTvKsfyFB-C4xwG2RCkiwpVN3Mr6fGP?usp=sharing" target="_blank">GoogleDrive</a>
+      </div>
+    </div>
+
+    <footer>&copy; 2026 Yunita. All rights reserved.</footer>
+  </body>
+</html>
